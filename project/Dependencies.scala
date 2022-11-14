@@ -7,6 +7,7 @@ object Versions {
   val Tapir = "0.18.0-M15"
   val Sttp = "3.3.6"
   val SttpOAuth2 = "0.10.0"
+  val slf4j = "1.7.30"
 }
 
 object Dependencies {
@@ -29,7 +30,8 @@ object Dependencies {
   )
 
   private val sttp = Seq(
-    "com.softwaremill.sttp.client3" %% "async-http-client-backend-cats-ce2" % Versions.Sttp
+    "com.softwaremill.sttp.client3" %% "async-http-client-backend-cats-ce2" % Versions.Sttp,
+    "org.slf4j"                      % "slf4j-simple"                       % Versions.slf4j
   )
 
   private val sttpOAuth2 = Seq(
